@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --roxo: rgb(138, 0, 126);
+    --amarelo: rgb(238, 255, 0);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Roboto', sans-serif;
+   color:white;
+}
+
+
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+header .container h2{
+   color: var(--amarelo);
+   font-family: 'Roboto', sans-serif;
+   font-size: 35px;
+   font-style: italic ;  
+}
+
+header nav a{
+    text-decoration:none;
+    color:var(--amarelo);
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:var(--roxo);
+
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0,.40)100%),  url('../img/friends_capa.jpg');
+    height:400px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-position-y: center;
+}
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.botao{
+    background-color: rgba(238, 255, 0,.50);
+    border:none;
+    border-radius: 5px;
+    color: var(--roxo);
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:var(--roxo);
+    color:var(--amarelo);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+/*estilos do carrosel*/
+
+.box-filme{
+    height: 200px;
+    width: 55px;
+    display: flexx;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgba(238, 255, 0,0.6);
+    
+}
+
+.box-filme:hover {
+    background-color: var(--roxo); 
+    transition: .5s ease all;
+}
+
+.item p {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color:rgba(238, 255, 0,0.6);    
+}
+
+.item:hover p {
+    color: var(--roxo);
+    
+}
+.carrosel-filmes{
+    margin-top:5px;
+}
+
+.carrosel-filmes h2 {
+    font-family: 'Roboto', sans-serif;
+    margin: 5px;
+}
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    bottom: 0;
+    text-align: center;
+}
+footer p {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+footer a {
+    font-size: 15px;
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    margin: 15px 30px 30px 10px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+footer a:hover{
+    color:var(--roxo);
+    transition: .5s ease all;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
